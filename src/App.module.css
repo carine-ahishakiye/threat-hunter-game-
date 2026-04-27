@@ -1,0 +1,11 @@
+.app { font-family:'Share Tech Mono',monospace; background:#050d08; color:var(--green); width:100vw; height:100vh; display:flex; flex-direction:column; position:relative; overflow:hidden; }
+.scanline { position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg,transparent,var(--green),transparent); opacity:0.1; animation:scan 5s linear infinite; pointer-events:none; z-index:99; }
+@keyframes scan { 0%{top:0} 100%{top:100%} }
+.gridBg { position:absolute; inset:0; background-image:linear-gradient(rgba(0,255,136,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,136,0.025) 1px,transparent 1px); background-size:32px 32px; pointer-events:none; }
+.feedback { position:absolute; top:40%; left:50%; transform:translateX(-50%); font-family:'Orbitron',monospace; font-size:36px; font-weight:900; letter-spacing:5px; pointer-events:none; z-index:200; animation:feedbk 0.8s ease forwards; }
+@keyframes feedbk { 0%{opacity:1;transform:translateX(-50%) translateY(0) scale(1)} 70%{opacity:0.7;transform:translateX(-50%) translateY(-30px) scale(1.1)} 100%{opacity:0;transform:translateX(-50%) translateY(-50px) scale(0.9)} }
+.main { display:flex; flex:1; overflow:hidden; position:relative; z-index:10; }
+.threatPanel { flex:1; padding:14px 16px; overflow-y:auto; scrollbar-width:none; }
+.threatPanel::-webkit-scrollbar { display:none; }
+.sectionLabel { font-size:9px; letter-spacing:3px; color:rgba(0,255,136,0.4); margin-bottom:12px; display:flex; align-items:center; gap:8px; }
+.sectionLabel::after { content:''; flex:1; height:1px; background:var(--border); }

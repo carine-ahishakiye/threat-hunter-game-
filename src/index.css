@@ -1,0 +1,14 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root { width: 100%; height: 100%; background: #050d08; overflow: hidden; }
+
+:root {
+  --green:  #00ff88;
+  --red:    #ff3355;
+  --yellow: #ffcc00;
+  --blue:   #00ccff;
+  --orange: #ff8c00;
+  --panel:  rgba(0,255,136,0.04);
+  --border: rgba(0,255,136,0.18);
+  --dim:    rgba(0,255,136,0.45);
+}

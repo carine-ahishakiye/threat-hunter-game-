@@ -1,0 +1,13 @@
+.hud { display:flex; justify-content:space-between; align-items:center; padding:10px 20px; border-bottom:1px solid var(--border); background:rgba(0,255,136,0.02); position:relative; z-index:10; flex-shrink:0; }
+.logo { font-family:'Orbitron',monospace; font-size:14px; font-weight:900; letter-spacing:3px; color:var(--green); }
+.dim { color:rgba(0,255,136,0.45); }
+.stat { text-align:center; }
+.label { font-size:9px; letter-spacing:2px; color:var(--dim); margin-bottom:2px; }
+.value { font-family:'Orbitron',monospace; font-size:20px; font-weight:700; }
+.ok { color:var(--green); }
+.warn { color:var(--yellow); }
+.danger { color:var(--red); animation:pulse 0.5s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.35} }
+.lives { display:flex; gap:5px; font-size:14px; margin-top:2px; }
+.on { color:var(--green); }
+.off { color:rgba(0,255,136,0.12); }

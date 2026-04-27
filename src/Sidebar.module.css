@@ -1,0 +1,20 @@
+.sidebar { display:flex; flex-direction:column; gap:10px; padding:12px; border-left:1px solid var(--border); width:240px; flex-shrink:0; overflow:hidden; }
+.block { border:1px solid var(--border); background:var(--panel); border-radius:4px; padding:10px 12px; }
+.feedBlock { flex:1; display:flex; flex-direction:column; overflow:hidden; }
+.label { font-size:9px; letter-spacing:3px; color:var(--dim); margin-bottom:10px; }
+.streakNum { font-family:'Orbitron',monospace; font-size:32px; font-weight:900; color:var(--yellow); text-align:center; line-height:1; }
+.streakSub { font-size:9px; color:var(--dim); letter-spacing:2px; text-align:center; margin-top:4px; }
+.mult { font-size:9px; color:var(--yellow); letter-spacing:1px; text-align:center; margin-top:6px; animation:pulse 1s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
+.row { display:flex; justify-content:space-between; font-size:9px; color:var(--dim); margin-bottom:5px; }
+.val { color:var(--green); }
+.barWrap { height:3px; background:rgba(0,255,136,0.08); border-radius:2px; margin-bottom:10px; overflow:hidden; }
+.bar { height:100%; border-radius:2px; transition:width 0.4s ease; }
+.feed { display:flex; flex-direction:column; gap:2px; overflow:hidden; }
+.empty { font-size:9px; color:rgba(0,255,136,0.2); letter-spacing:2px; }
+.item { font-size:10px; padding:4px 0; border-bottom:1px solid rgba(0,255,136,0.05); display:flex; gap:8px; color:var(--dim); line-height:1.4; }
+.item:last-child { border-bottom:none; }
+.icon { width:12px; flex-shrink:0; text-align:center; }
+.good { color:rgba(0,255,136,0.7); }
+.bad  { color:rgba(255,51,85,0.75); }
+.miss { color:rgba(255,204,0,0.7); }

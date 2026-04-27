@@ -1,0 +1,12 @@
+.screen { position:absolute; inset:0; background:rgba(5,13,8,0.97); z-index:300; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px; text-align:center; padding:20px; animation:fadeIn 0.4s ease; }
+@keyframes fadeIn { from{opacity:0} to{opacity:1} }
+.tag { font-size:9px; letter-spacing:4px; color:rgba(0,255,136,0.3); }
+.rank { font-family:'Orbitron',monospace; font-size:13px; font-weight:700; letter-spacing:4px; }
+.scoreNum { font-family:'Orbitron',monospace; font-size:52px; font-weight:900; color:var(--green); line-height:1; }
+.scoreLbl { font-size:9px; color:rgba(0,255,136,0.4); letter-spacing:3px; }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px 24px; }
+.stat { text-align:center; }
+.sv { font-family:'Orbitron',monospace; font-size:22px; font-weight:700; color:var(--green); }
+.sl { font-size:8px; letter-spacing:2px; color:rgba(0,255,136,0.35); margin-top:4px; }
+.btn { background:transparent; border:1px solid var(--green); color:var(--green); font-family:'Orbitron',monospace; font-size:11px; letter-spacing:3px; padding:12px 36px; cursor:pointer; border-radius:3px; transition:all 0.2s; }
+.btn:hover { background:rgba(0,255,136,0.1); }
